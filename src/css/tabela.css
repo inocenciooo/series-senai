@@ -1,0 +1,66 @@
+table {
+    width: 100%;
+    min-height: 65vh;
+}
+
+.hero {
+    overflow-x: scroll;
+    width: 80vw;
+}
+
+.hero h1, .hero h2 {
+    text-align: center;
+}
+
+.hero a,
+.hero a:hover {
+    border: none;
+    padding: 0;
+    margin: 0;
+    background-color: inherit;
+    color: inherit;
+    text-decoration: underline;
+}
+
+.hero a:hover {
+    color: rgb(255, 0, 85);
+}
+
+table,
+th,
+td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+
+th {
+    font-weight: bold;
+    background-color: black;
+    color: white;
+    padding: 1rem;
+}
+
+tbody tr {
+    transition: 0.3s ease;
+}
+
+tbody td {
+    padding: 1.2em;
+}
+
+tbody tr:nth-child(even) {
+    background-color: rgba(255, 0, 85, 0.123);
+}
+
+tbody tr:hover {
+    background-color: rgb(255, 0, 85);
+    color: white;
+}
+
+@media (max-width:1000px) {
+    .hero {
+        width: 100%;
+    }
+}

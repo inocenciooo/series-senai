@@ -6,4 +6,5 @@ mobileMenu.addEventListener("click", ativarMenu);
 
 function ativarMenu(){
     navList.classList.toggle("active")
+     mobileMenu.classList.toggle("active")
 }

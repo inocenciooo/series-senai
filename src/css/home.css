@@ -206,16 +206,6 @@ a {
   background-color: inherit;
 }
 
-@media (max-width: 1000px) {
-  .hero {
-    width: 90vw;
-  }
-
-  .logo {
-    width: 20rem;
-  }
-}
-
 .mobile-menu {
   cursor: pointer;
   display: none;
@@ -227,6 +217,7 @@ a {
   height: 2px;
   margin: 10px;
   position: relative;
+  transition: 0.3s ease-in-out;
 }
 
 .mobile-menu div:before,
@@ -236,6 +227,7 @@ a {
   width: 30px;
   height: 2px;
   position: absolute;
+  transition: 0.3s ease-in-out;
 }
 
 .mobile-menu div:before {
@@ -247,6 +239,17 @@ a {
 }
 
 @media (max-width: 1000px) {
+  .hero h1 {
+    font-size: 4rem;
+    text-align: center;
+  }
+  .hero {
+    width: 90vw;
+  }
+
+  .logo {
+    width: 20rem;
+  }
   .mobile-menu {
     display: block;
   }
@@ -278,4 +281,18 @@ a {
   .nav-list.active li {
     opacity: 1;
   }
+
+  .mobile-menu.active div {
+    background-color: transparent;
+  }
+}
+
+.mobile-menu.active div:before {
+  top: 0;
+  transform: rotate(45deg);
+}
+
+.mobile-menu.active div:after {
+  top: 0;
+  transform: rotate(-45deg);
 }
